@@ -1,0 +1,43 @@
+
+body {
+  font-family: sans-serif;
+  margin: 20px;
+  background: #f4f4f4;
+}
+
+h1 {
+  text-align: center;
+}
+
+.semestre {
+  margin-bottom: 40px;
+}
+
+.ramos {
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+.ramo {
+  background-color: #d0e3ff;
+  border: 2px solid #aaa;
+  padding: 10px;
+  border-radius: 8px;
+  width: 180px;
+  transition: background 0.3s;
+  cursor: pointer;
+}
+
+.ramo.aprobado {
+  background-color: #9be29b;
+}
+
+.ramo.en-curso {
+  background-color: #fff59b;
+}
+
+.ramo.bloqueado {
+  opacity: 0.4;
+  pointer-events: none;
+}

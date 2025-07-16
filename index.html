@@ -1,0 +1,50 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Malla Ingeniería Civil Metalúrgica</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Malla Ingeniería Civil Metalúrgica - UdeC</h1>
+
+  <div class="semestre" data-semestre="1">
+    <h2>Semestre I</h2>
+    <div class="ramos">
+      <div class="ramo" data-codigo="fisica1">
+        <p>Física I</p>
+        <input type="number" placeholder="Promedio" step="0.1">
+      </div>
+      <div class="ramo" data-codigo="algebra1">
+        <p>Álgebra I</p>
+        <input type="number" placeholder="Promedio" step="0.1">
+      </div>
+      <div class="ramo" data-codigo="calculo1">
+        <p>Cálculo I</p>
+        <input type="number" placeholder="Promedio" step="0.1">
+      </div>
+    </div>
+  </div>
+
+  <div class="semestre" data-semestre="2">
+    <h2>Semestre II</h2>
+    <div class="ramos">
+      <div class="ramo" data-codigo="fisica2" data-prerrequisitos="fisica1">
+        <p>Física II</p>
+        <input type="number" placeholder="Promedio" step="0.1">
+      </div>
+      <div class="ramo" data-codigo="algebra2" data-prerrequisitos="algebra1">
+        <p>Álgebra II</p>
+        <input type="number" placeholder="Promedio" step="0.1">
+      </div>
+      <div class="ramo" data-codigo="calculo2" data-prerrequisitos="calculo1">
+        <p>Cálculo II</p>
+        <input type="number" placeholder="Promedio" step="0.1">
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
